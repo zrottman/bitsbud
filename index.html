@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Bits Bud</title>
+  <link rel="stylesheet" href="resources/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <h1>Bits Bud</h1>
+      <p>A friendly bit manipulator to help you develop better intuition for bits, bytes, and bitwise operations.</p>
+    </header>
+    <div id="container">
+      <div id="output"></div>
+    </div>
+    <section id="faq">
+      <h1>What the ...?</h1>
+      <p><b>What the heck are bits?</b></p>
+      <p>Bits are the smallest units of information in computers. They can have only two values: 0 or 1, off or on. Bits are used to represent data in computers and to perform logical operations.</p>
+
+      <p><b>What the heck is a byte?</b></p>
+      <p>A byte is a unit of digital information consisting of 8 bits. A byte can assume 256 (2<sup>8</sup>) distinct states of 0's and 1's. In our case, a byte is used to represent non-negative integers from 0-255.</p>
+
+      <p><b>What the heck are bitwise operations?</b><p>
+      <p>Bitwise operations are operations that manipulate the bits of a number. There are four bitwise operators: <code>AND</code>, <code>OR</code>, <code>XOR</code>, and <code>NOT</code>. These operators allow you to combine, modify, or extract specific bits from a number.</p>
+
+      <p><b>What the heck is the <code>AND</code> operator?</b></p>
+      <p>The <code>AND</code> operator returns 1 if both input bits are 1, otherwise it returns 0. This operator is commonly used to mask out specific bits from a number or to test if a specific bit is set.</p>
+
+      <p><b>What the heck is the <code>OR</code> operator?</b></p>
+      <p>The <code>OR</code> operator returns 1 if at least one input bit is 1, otherwise it returns 0. This operator is commonly used to set specific bits in a number or to combine multiple values into a single value.</p>
+
+      <p><b>What in holy hell is the <code>XOR</code> operator?</b></p>
+      <p>The <code>XOR</code> operator returns 1 if the input bits are different, otherwise it returns 0. This operator is commonly used to toggle specific bits in a number or to compare two values for equality.<p>
+
+      <p><b>What the heck is the <code>NOT</code> operator, and why isn't it included here?</b></p>
+      <p>The <code>NOT</code> operator, also known as the bitwise complement, returns the inverse of the input bit. It returns 0 if the input bit is 1, and 1 if the input bit is 0. This operator is commonly used to invert specific bits in a number. It's not included here because it's a unary operation (i.e., it has only one operand), whereas the operations being demonstrated here are binary operations (i.e., they involve two operands).</p>
+
+      <p><b>What the heck is bit shifting?</b></p>
+      <p>Bit shifting is a bitwise operation that moves the bits of a number to the left or right. When you shift a bit to the left, you double its value. When you shift a bit to the right, you halve its value. Hey, that's pretty cool! Bit shifting is commonly used to perform fast multiplication or division by powers of two.</p>
+
+      <p><b>How the heck do I use this app to learn about bitwise operations?</b></p>
+      <p>Easy! Click the buttons of either of the input bytes to toggle its bits on or off, which is reflected in the binary and integer equivalents to the right. You can also use the shift left and shift right buttons to shift the bits. The AND, OR, and XOR radio buttons specify which logical operation to perform on the two input bits, and the output byte will instantaneously reflect the result. Play around with different combinations of bits and logical operators to see how they behave!</p>
+    </section>
+    <footer>
+      <p>Code on <a href="https://github.com/zrottman/js_playground/tree/main/03_bitwise-operations" target="_blank">GitHub</a>. More projects and code-related musings <a href="http://www.zachrottman.net/" target="_blank">here</a>.</p>
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Zach Rottman All Rights Reserved</p>
+    </footer>
+  </div>
+  <script src="resources/index.js"></script>
+</body>
+</html>

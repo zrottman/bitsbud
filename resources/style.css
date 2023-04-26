@@ -1,0 +1,104 @@
+:root {
+  --main-bg-color: #EEF5DB;
+  --bit-off-color: #D6D1B1;
+  --bit-on-color: #FE5F55;
+  --shift-btns-color: #F0B67F;
+  --shift-btns-click-color: #D6D1B1;
+  --txt-color: black;
+  --dialog-bg-color: #F0B67F;
+  --border-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier', monospace;
+  background: var(--main-bg-color);
+  color: var(--txt-color);
+}
+
+h1 {
+  margin:  0;
+}
+
+#wrapper {
+  width: 800px;
+  margin: 20px auto;
+}
+
+#container {
+  width: 100%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr 1fr .5fr;
+  align-items: center;
+  justify-content: left;
+}
+
+.byte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.bit {
+  height: 50px;
+  width: 50px;
+  border: 1px solid var(--border-color);
+  background: var(--bit-off-color);
+  border-radius: 25px;
+}
+
+.binary, .integer {
+  text-align: center;
+}
+
+.bit.toggle {
+  background-color: var(--bit-on-color);
+}
+
+.operators {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+}
+
+.operators button {
+  width: 60%;
+  background-color: var(--shift-btns-color);
+  border: 1px solid var(--border-color);
+  color: var(--border-color);
+}
+
+.operators button:active {
+  background-color: var(--shift-btns-click-color);
+}
+
+a, a:visited {
+  color: var(--bit-on-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--main-bg-color);
+}
+
+#output {
+  grid-column: 3;
+  grid-row: 4;
+  justify-self: center;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid var(--border-color);
+  background: var(--dialog-bg-color);
+}
+
+header, section, footer {
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  background-color: var(--bit-off-color);
+  color: var(--txt-color);
+  margin: 30px 0;
+}
